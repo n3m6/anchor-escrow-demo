@@ -1,9 +1,10 @@
-use crate::states::Escrow;
 use anchor_lang::prelude::*;
 use anchor_spl::{
     associated_token::AssociatedToken,
     token_interface::{transfer_checked, Mint, TokenAccount, TokenInterface, TransferChecked},
 };
+
+use crate::states::Escrow;
 
 #[derive(Accounts)]
 pub struct Make<'info> {

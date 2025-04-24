@@ -1,5 +1,3 @@
-use crate::instruction::Make;
-use crate::states::Escrow;
 use anchor_lang::prelude::*;
 use anchor_spl::{
     associated_token::AssociatedToken,
@@ -8,6 +6,9 @@ use anchor_spl::{
         TransferChecked,
     },
 };
+
+use crate::instruction::Make;
+use crate::states::Escrow;
 
 #[derive(Accounts)]
 pub struct Refund<'info> {
